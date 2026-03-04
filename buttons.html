@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM EXAMPLE</title>
+    </head>
+    <body> 
+        <h2 id="one"> March 8</h2>
+        <button onclick ="changetext()">click me</button>
+
+        <h2 id="two"> January 8</h2>
+        <button onclick ="changename()">click me</button>
+
+        <h2 class="three">October 8</h2>
+        <button onclick ="changestyle()">click me</button>
+    <script>
+        function changetext(){
+            var element =document.getElementById("one");
+            element.textContent = " International Women's Day";
+            element.style.color="blue";
+            element.style.fontsize="30px";
+        }
+
+        function changename(){
+            var element =document.getElementById("two");
+            element.textContent = " Republic Day";
+            element.style.color="blue";
+            element.style.fontsize="30px";
+        }
+
+        function changestyle(){
+            var element =document.getElementsByClassName("three")[0];
+            element.textContent ="Indian Air Force Day";
+            element.style.color="blue";
+            element.style.fontsize="40px";
+        }
+    </script>
+
+    </body>
+</html>
